@@ -29,7 +29,7 @@ const Home = () => {
 
       {showButton && (
         <aside
-          className='z-[999] fixed flex items-center justify-center bg-primary hover:bg-accent-1 px-[1rem] py-[1.2rem] right-[3rem] bottom-[3git rem] cursor-pointer rounded-[0.15rem] opacity-[0.75] hover:opacity-[1] transition-all duration-300'
+          className='z-[999] fixed flex items-center justify-center bg-primary hover:bg-accent-1 px-[1rem] py-[1.2rem] right-[3rem] bottom-[3rem] cursor-pointer rounded-[0.15rem] opacity-[0.75] hover:opacity-[1] transition-all duration-300'
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
         >
           <ArrowRightIcon className='rotate-[270deg]' />

@@ -9,7 +9,7 @@ const Hero = () => {
       className='w-full h-[65rem] bg-hero-image bg-cover bg-no-repeat'
       role='banner'
     >
-      <hgroup className='w-[78rem] mx-auto flex flex-col gap-[5rem] items-start'>
+      <hgroup className='w-[78vw] mx-auto flex flex-col gap-[5rem] items-start'>
         <UnAuthNavbar />
         <header className='text-white uppercase'>
           {/* <h1 className='discover font-bold text-3xl leading-1'>
@@ -37,7 +37,7 @@ const Hero = () => {
             role='button'
             className='flex px-[2.5rem] py-[0.55rem] justify-center items-center gap-[0.75rem] border-[.2rem] btn-cta'
           >
-            <b className='inline-block text-white uppercase font-medium text-[1.25rem] leading-[120%]'>
+            <b className='inline-block text-white uppercase font-medium text-[1.25rem] leading-1'>
               shop now
             </b>
             <ArrowCircleWhiteIcon />

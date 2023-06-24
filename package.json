@@ -12,7 +12,9 @@
     "@reduxjs/toolkit": "^1.9.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-redux": "^8.1.1"
+    "react-redux": "^8.1.1",
+    "react-router-dom": "^6.13.0",
+    "react-scroll": "^1.8.9"
   },
   "eslintConfig": {
     "env": {
@@ -56,6 +58,7 @@
       "import/no-duplicates": "warn",
       "import/no-unassigned-import": "warn",
       "import/no-self-import": "warn",
+      "import/no-unresolved": "off",
       "import/order": [
         "warn",
         {

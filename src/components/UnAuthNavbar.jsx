@@ -1,4 +1,5 @@
-import { Link } from 'react-router-dom';
+import { Link } from 'react-scroll';
+
 import {
   BagIcon,
   LogoWhiteIcon,
@@ -16,9 +17,17 @@ const UnAuthNavbar = () => {
         role='navigation'
         aria-label='Main'
       >
-        <Link to='#'>Shop</Link>
-        <Link to='#'>About</Link>
-        <Link to='#'>Contact</Link>
+        {['home', 'about', 'contact']?.map((item, index) => (
+          <Link
+            key={index}
+            to={item}
+            spy={true}
+            smooth={true}
+            className='cursor-pointer'
+          >
+            {item}
+          </Link>
+        ))}
       </div>
 
       <div className='flex justify-center items-center gap-[1.5rem]'>

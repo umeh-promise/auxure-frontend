@@ -1,6 +1,6 @@
 // import product1 from '../assets/img/perf1.png';
-import product1 from '../assets/svg/perf_2.svg';
-import product2 from '../assets/svg/perf_1.svg';
+import product1 from '../assets/svg/perf_1.svg';
+import product2 from '../assets/svg/perf_2.svg';
 import product3 from '../assets/svg/perf3.svg';
 import product4 from '../assets/svg/perf4.svg';
 
@@ -37,7 +37,7 @@ const product_data = [
 
 const Products = () => {
   return (
-    <section className='w-[78rem] mx-auto pt-[3.75rem] pb-[8.75rem]'>
+    <section className='w-[78vw] mx-auto pt-[3.75rem] pb-[8.75rem]'>
       <h3 className='text-color text-xl font-medium leading-1 pb-[3.5rem]'>
         Latest collection
       </h3>
@@ -60,7 +60,7 @@ const Products = () => {
             </div>
             <button
               role='button'
-              className='text-color text-base font-medium leading-2 uppercase bg-accent-1 px-[1.25rem] py-[0.62rem] hover:bg-primary hover:text-white'
+              className='text-color text-base font-medium leading-2 uppercase bg-accent-1 px-[1.25rem] py-[0.62rem] hover:bg-primary hover:text-white transition-all duration-700'
             >
               Shop now
             </button>

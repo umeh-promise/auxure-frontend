@@ -56,6 +56,7 @@
       "import/no-duplicates": "warn",
       "import/no-unassigned-import": "warn",
       "import/no-self-import": "warn",
+      "import/no-unresolved": "off",
       "import/order": [
         "warn",
         {

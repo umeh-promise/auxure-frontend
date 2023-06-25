@@ -1,24 +1,25 @@
 import { ArrowCircleIcon } from '../assets/svg/svg-icons';
 
-const discover_data = [
-  {
-    id: 1,
-    reverse: 'flex-row',
-    bg_img: 'bg-timeless-image',
-    title: 'Timeless Elegance',
-    details:
-      'Immerse yourself in the essence of timeless elegance. Our exquisite fragrances are meticulously crafted to embody sophistication and grace. Experience the allure of our luxurious scents, meticulously curated to captivate and leave an indelible impression',
-  },
-  {
-    id: 2,
-    reverse: 'flex-row-reverse',
-    bg_img: 'bg-glamour-image',
-    title: 'Unleash Your Inner Glamour',
-    details:
-      'Unleash your inner glamour with our extraordinary collection of perfumes. Indulge in the opulence and sophistication of our scents, designed to accentuate your unique style and elevate every moment. Discover the essence of true luxury and embrace your own unparalleled allure.',
-  },
-];
 const Discover = () => {
+  const discover_data = [
+    {
+      id: 1,
+      reverse: 'flex-row',
+      bg_img: 'bg-timeless-image',
+      title: 'Timeless Elegance',
+      details:
+        'Immerse yourself in the essence of timeless elegance. Our exquisite fragrances are meticulously crafted to embody sophistication and grace. Experience the allure of our luxurious scents, meticulously curated to captivate and leave an indelible impression',
+    },
+    {
+      id: 2,
+      reverse: 'flex-row-reverse',
+      bg_img: 'bg-glamour-image',
+      title: 'Unleash Your Inner Glamour',
+      details:
+        'Unleash your inner glamour with our extraordinary collection of perfumes. Indulge in the opulence and sophistication of our scents, designed to accentuate your unique style and elevate every moment. Discover the essence of true luxury and embrace your own unparalleled allure.',
+    },
+  ];
+
   return (
     <section id='about'>
       {discover_data?.map(({ id, bg_img, title, details, reverse }) => (

@@ -1,7 +1,13 @@
+import { createBrowserRouter } from 'react-router-dom';
+
 import Home from './pages/unAuthPages/Home';
+import ErrorPage from './pages/unAuthPages/NotFound';
+import { home } from './utils/routes';
 
-function App() {
-  return <Home />;
-}
-
-export default App;
+export const router = createBrowserRouter([
+  {
+    path: home,
+    element: <Home />,
+    errorElement: <ErrorPage />,
+  },
+]);

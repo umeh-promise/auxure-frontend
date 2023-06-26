@@ -43,11 +43,11 @@ export default {
     },
     extend: {
       backgroundImage: {
-        'hero-image': 'url(./src/assets/img/auxure-bg.png)',
+        'hero-image': 'url(./img/auxure-bg.png)',
+        'timeless-image': 'url(./img/img1.png)',
+        'glamour-image': 'url(./img/img2.png)',
         'icon-diamond': 'url(./src/assets/svg/ion_diamond.svg)',
         'auxure-diagonal': 'url(./src/assets/svg/auxure-diagonal.svg)',
-        'timeless-image': 'url(./src/assets/img/img1.png)',
-        'glamour-image': 'url(./src/assets/img/img2.png)',
       },
     },
   },

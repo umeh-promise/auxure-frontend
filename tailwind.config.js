@@ -43,11 +43,11 @@ export default {
     },
     extend: {
       backgroundImage: {
-        'hero-image': 'url(./src/assets/img/auxure-bg.png)',
-        'icon-diamond': 'url(./src/assets/svg/ion_diamond.svg)',
-        'auxure-diagonal': 'url(./src/assets/svg/auxure-diagonal.svg)',
-        'timeless-image': 'url(./src/assets/img/img1.png)',
-        'glamour-image': 'url(./src/assets/img/img2.png)',
+        // 'hero-image': 'url(./src/assets/img/auxure-bg.png)',
+        // 'icon-diamond': 'url(./src/assets/svg/ion_diamond.svg)',
+        // 'auxure-diagonal': 'url(./src/assets/svg/auxure-diagonal.svg)',
+        // 'timeless-image': 'url(./src/assets/img/img1.png)',
+        // 'glamour-image': 'url(./src/assets/img/img2.png)',
       },
     },
   },

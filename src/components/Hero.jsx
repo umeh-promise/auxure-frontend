@@ -5,7 +5,7 @@ import UnAuthNavbar from './UnAuthNavbar';
 const Hero = () => {
   return (
     <section
-      className='w-full h-[65rem] bg-hero-image md:bg-cover bg-no-repeat'
+      className="w-full h-[65rem] bg-[url('./assets/img/auxure-bg.png')] md:bg-cover bg-no-repeat"
       role='banner'
     >
       <hgroup className='w-[78vw] mx-auto flex flex-col gap-[5rem] items-start'>

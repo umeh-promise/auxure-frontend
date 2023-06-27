@@ -5,7 +5,7 @@ const Discover = () => {
     {
       id: 1,
       reverse: 'flex-row',
-      bg_img: 'bg-timeless-image',
+      bg_img: 'bg-[url("./assets/img/img1.png")]',
       title: 'Timeless Elegance',
       details:
         'Immerse yourself in the essence of timeless elegance. Our exquisite fragrances are meticulously crafted to embody sophistication and grace. Experience the allure of our luxurious scents, meticulously curated to captivate and leave an indelible impression',
@@ -13,7 +13,7 @@ const Discover = () => {
     {
       id: 2,
       reverse: 'flex-row-reverse',
-      bg_img: 'bg-glamour-image',
+      bg_img: 'bg-[url("./assets/img/img2.png")]',
       title: 'Unleash Your Inner Glamour',
       details:
         'Unleash your inner glamour with our extraordinary collection of perfumes. Indulge in the opulence and sophistication of our scents, designed to accentuate your unique style and elevate every moment. Discover the essence of true luxury and embrace your own unparalleled allure.',

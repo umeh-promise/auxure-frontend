@@ -39,12 +39,16 @@ const Footer = () => {
           <hgroup className='flex items-center border-[1.5px] border-[#d4b483] rounded-md overflow-hidden'>
             <input
               type='text'
+              id='get-updates'
               placeholder='Get product updates'
               className='text-accent-4 px-[1.03rem] py-[0.94rem] leading-2 opacity-[0.65] text-sm outline-0'
             />
-            <span className='self-stretch flex items-center justify-center bg-accent-1 px-[1.19rem] py-[1.2rem]'>
+            <label
+              htmlFor='get-updates'
+              className='self-stretch flex items-center justify-center bg-accent-1 px-[1.19rem] py-[1.2rem] cursor-pointer'
+            >
               <ArrowRightIcon />
-            </span>
+            </label>
           </hgroup>
         </div>
       </hgroup>
@@ -57,7 +61,7 @@ const Footer = () => {
             <FacebookIcon />
             <TwitterIcon />
           </span>
-          <p className='text-base font-primary font-light'>
+          <p className='text-base font-primary font-lighter'>
             © 2023 Auxure. All rights reserved
           </p>
         </div>

@@ -1,17 +1,19 @@
 import React from 'react';
 
-import { ReactComponent as Icon1 } from './logo-white.svg';
-import { ReactComponent as Icon2 } from './auxure-logo.svg';
 import { ReactComponent as Icon3 } from './arrows-down-top-move.svg';
+import { ReactComponent as Icon2 } from './auxure-logo.svg';
+import { ReactComponent as Icon15 } from './check.svg';
 import { ReactComponent as Icon4 } from './ei_arrow-up-white.svg';
 import { ReactComponent as Icon5 } from './ei_arrow-up.svg';
-import { ReactComponent as Icon6 } from './logo.svg';
+import { ReactComponent as Icon12 } from './facebook.svg';
+import { ReactComponent as Icon14 } from './google.svg';
 import { ReactComponent as Icon7 } from './icon-bag.svg';
-import { ReactComponent as Icon8 } from './ion_diamond.svg';
 import { ReactComponent as Icon9 } from './icon-search.svg';
 import { ReactComponent as Icon10 } from './icon-user.svg';
+import { ReactComponent as Icon8 } from './ion_diamond.svg';
 import { ReactComponent as Icon11 } from './linkedin.svg';
-import { ReactComponent as Icon12 } from './facebook.svg';
+import { ReactComponent as Icon1 } from './logo-white.svg';
+import { ReactComponent as Icon6 } from './logo.svg';
 import { ReactComponent as Icon13 } from './twitter.svg';
 
 export const LogoWhiteIcon = React.memo(Icon1);
@@ -27,3 +29,5 @@ export const UserIcon = React.memo(Icon10);
 export const LinkedIcon = React.memo(Icon11);
 export const FacebookIcon = React.memo(Icon12);
 export const TwitterIcon = React.memo(Icon13);
+export const GoogleIcon = React.memo(Icon14);
+export const CheckIcon = React.memo(Icon15);

@@ -54,7 +54,7 @@ const Products = () => {
               <h4 className='text-color text-base font-medium leading-1 mb-[0.56rem]'>
                 {title}
               </h4>
-              <p className='text-lighter text-sm font-light leading-2'>
+              <p className='text-lighter text-sm font-lighter leading-2'>
                 {details}
               </p>
             </div>

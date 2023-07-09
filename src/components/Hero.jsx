@@ -5,7 +5,7 @@ import UnAuthNavbar from './UnAuthNavbar';
 const Hero = () => {
   return (
     <section
-      className="w-full h-[65rem] bg-[url('./assets/img/auxure-bg.png')] md:bg-cover bg-no-repeat"
+      className="w-full overflow-hidden h-[40rem] lg:h-[65rem] bg-[url('./assets/img/auxure-bg.png')] bg-cover bg-top bg-center md:bg-cover bg-no-repeat"
       role='banner'
     >
       <hgroup className='w-[78vw] mx-auto flex flex-col gap-[5rem] items-start'>
@@ -14,7 +14,7 @@ const Hero = () => {
           {/* <h1 className='discover font-bold text-3xl leading-1'>
             Discover The Essence Of Timeless 
           </h1> */}
-          <hgroup className='wrapper mb-[3.32rem] font-secondary'>
+          <hgroup className='heading-wrapper mb-[3.32rem] font-secondary'>
             {'Discover The Essence Of Timeless'
               .split(' ')
               .map((word, index) => (
@@ -23,12 +23,12 @@ const Hero = () => {
                   className='font-bold text-3xl leading-1.5'
                   role='heading'
                 >
-                  <span className='first-letter'>{word.charAt(0)}</span>
+                  <span className='heading-first-letter'>{word.charAt(0)}</span>
                   <span className=''>{word.slice(1)} </span>
                 </span>
               ))}
             <span
-              className='relative text-2xl font-black leading-1 inline-block border-y-[.125rem] border-color-primary svg-container px-[0.62rem] pt-[0.75rem] pb-[0.375rem]'
+              className='relative text-2xl font-black leading-1 inline-block border-y-[.125rem] border-color-primary heading-svg-container px-[0.62rem] pt-[0.75rem] pb-[0.375rem]'
               role='heading'
             >
               Luxury

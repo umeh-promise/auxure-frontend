@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 
 import { ArrowRightIcon } from '../../assets/svg/svg-icons';
+import Carousel from '../../components/bits/Carousel';
 import Discover from '../../components/Discover';
 import Footer from '../../components/Footer';
 import Hero from '../../components/Hero';

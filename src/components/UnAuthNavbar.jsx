@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import { Link } from 'react-scroll';
 
 import {
@@ -6,6 +7,7 @@ import {
   SearchIcon,
   UserIcon,
 } from '../assets/svg/svg-icons';
+import { login } from '../utils/routes';
 
 const UnAuthNavbar = () => {
   return (
@@ -32,7 +34,9 @@ const UnAuthNavbar = () => {
 
       <div className='flex justify-center items-center gap-[1.5rem]'>
         <SearchIcon />
-        <UserIcon />
+        <NavLink to={login}>
+          <UserIcon />
+        </NavLink>
         <BagIcon />
       </div>
     </nav>

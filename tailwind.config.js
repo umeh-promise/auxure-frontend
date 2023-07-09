@@ -35,7 +35,8 @@ export default {
       '3xl': '3.375rem',
     },
     fontWeight: {
-      light: 300,
+      lighter: 300,
+      light: 400,
       medium: 500,
       semibold: 600,
       bold: 700,

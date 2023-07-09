@@ -5,6 +5,7 @@ import slider2 from '../../assets/img/slider2.png';
 import slider3 from '../../assets/img/slider3.png';
 import { CheckIcon, GoogleIcon } from '../../assets/svg/svg-icons';
 import Carousel from '../../components/bits/Carousel';
+import { signup } from '../../utils/routes';
 
 const Login = () => {
   return (
@@ -87,7 +88,7 @@ const Login = () => {
           </Link>
           <span className='text-color font-light leading-3 text-base'>
             Don’t have an account?{' '}
-            <Link to='signup' className='text-primary '>
+            <Link to={signup} className='text-primary '>
               Sign Up
             </Link>
           </span>

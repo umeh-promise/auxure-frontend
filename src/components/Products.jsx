@@ -37,30 +37,31 @@ const Products = () => {
   ];
 
   return (
-    <section className='w-[78vw] mx-auto pt-[3.75rem] pb-[8.75rem]'>
+    <section className=' w-[90vw] md:w-[80vw] lg:w-[78vw] mx-auto pt-[3.75rem] pb-[4.75rem] lg:pb-[8.75rem]'>
       <h3 className='text-color text-xl font-medium leading-1 pb-[3.5rem]'>
         Latest collection
       </h3>
-      <div className='flex justify-between'>
+      {/* <div className='flex justify-between'> */}
+      <div className='grid justify-items-center gap-[2rem] grid-cols-1 md:gap-x-[2rem] md:gap-y-[2rem] md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 md:justify-items-stretch lg:gap-x-[4rem]'>
         {product_data?.map(({ id, title, details, img }) => (
           <hgroup
             key={id}
-            className='w-[17.25rem] flex flex-col items-start gap-[0.75rem]'
+            className='w-[17.25rem] flex flex-col md:items-start text-center md:text-left items-center gap-[0.75rem]'
           >
-            <div className='flex items-center w-full justify-center border bg-accent-3'>
+            <div className='flex items-center w-full justify-center border-style bg-accent-3'>
               <img src={img} alt='' className='object-cover' />
             </div>
-            <div className='mb-[1.25rem]'>
+            <div className='lg:mb-[1.25rem]'>
               <h4 className='text-color text-base font-medium leading-1 mb-[0.56rem]'>
                 {title}
               </h4>
-              <p className='text-lighter text-sm font-lighter leading-2'>
+              <p className='text-lighter text-sm font-lighter leading-2 line-clamp-3 xl:line-clamp-none hover:line-clamp-none'>
                 {details}
               </p>
             </div>
             <button
               role='button'
-              className='text-color text-base font-medium leading-2 uppercase bg-accent-1 px-[1.25rem] py-[0.62rem] hover:bg-primary hover:text-white transition-all duration-700'
+              className='text-color rounded-sm text-base font-medium leading-2 uppercase bg-accent-1 py-[0.45rem] px-[1.25rem] md:py-[0.62rem] hover:bg-primary hover:text-white transition-all duration-700'
             >
               Shop now
             </button>

@@ -2,7 +2,9 @@ import React from 'react';
 
 import { ReactComponent as Icon3 } from './arrows-down-top-move.svg';
 import { ReactComponent as Icon2 } from './auxure-logo.svg';
+import { ReactComponent as Icon16 } from './bar-icon.svg';
 import { ReactComponent as Icon15 } from './check.svg';
+import { ReactComponent as Icon17 } from './close.svg';
 import { ReactComponent as Icon4 } from './ei_arrow-up-white.svg';
 import { ReactComponent as Icon5 } from './ei_arrow-up.svg';
 import { ReactComponent as Icon12 } from './facebook.svg';
@@ -31,3 +33,5 @@ export const FacebookIcon = React.memo(Icon12);
 export const TwitterIcon = React.memo(Icon13);
 export const GoogleIcon = React.memo(Icon14);
 export const CheckIcon = React.memo(Icon15);
+export const BarIcon = React.memo(Icon16);
+export const CloseIcon = React.memo(Icon17);

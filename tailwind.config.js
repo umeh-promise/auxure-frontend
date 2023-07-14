@@ -13,6 +13,8 @@ export default {
       'background-color': '#fcfaf8',
       color: '#312921',
       lighter: '#4e4033',
+      transparent: 'transparent',
+      black: '#000000',
     },
     fontFamily: {
       pimary: ['Poppins', 'sans-serif'],
@@ -26,8 +28,8 @@ export default {
       3: '200%',
     },
     fontSize: {
-      base: '1rem',
       sm: '0.8125rem',
+      base: '1rem',
       md: '1.125rem',
       lg: '1.5rem',
       xl: '2rem',

@@ -59,7 +59,7 @@ const Login = () => {
               >
                 Remember Me
               </label>
-              <CheckIcon className='hidden w-[1.5rem] h-[1.5rem] peer-checked:block absolute w-[1.5rem] pointer-events-none left-0' />
+              <CheckIcon className='hidden w-[1.5rem] h-[1.5rem] peer-checked:block absolute pointer-events-none left-0' />
             </hgroup>
 
             <Link

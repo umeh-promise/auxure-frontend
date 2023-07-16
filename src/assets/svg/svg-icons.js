@@ -16,6 +16,7 @@ import { ReactComponent as Icon8 } from './ion_diamond.svg';
 import { ReactComponent as Icon11 } from './linkedin.svg';
 import { ReactComponent as Icon1 } from './logo-white.svg';
 import { ReactComponent as Icon6 } from './logo.svg';
+import { ReactComponent as Icon18 } from './rolling.svg';
 import { ReactComponent as Icon13 } from './twitter.svg';
 
 export const LogoWhiteIcon = React.memo(Icon1);
@@ -35,3 +36,4 @@ export const GoogleIcon = React.memo(Icon14);
 export const CheckIcon = React.memo(Icon15);
 export const BarIcon = React.memo(Icon16);
 export const CloseIcon = React.memo(Icon17);
+export const RollingLoader = React.memo(Icon18);

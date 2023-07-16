@@ -33,6 +33,7 @@ const Discover = () => {
                 src={img}
                 alt={title}
                 className='block h-full w-full object-cover object-top'
+                loading='lazy'
               />
             </div>
             <div className='w-full bg-[url("./assets/svg/auxure-diagonal.svg")] bg-cover bg-no-repeat flex md:justify-center items-center'>

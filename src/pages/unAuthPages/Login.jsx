@@ -3,13 +3,13 @@ import { Link } from 'react-router-dom';
 import slider1 from '../../assets/img/slider1.png';
 import slider2 from '../../assets/img/slider2.png';
 import slider3 from '../../assets/img/slider3.png';
-import { CheckIcon, GoogleIcon } from '../../assets/svg/svg-icons';
+import { CheckIcon, GoogleIcon, LogoIcon } from '../../assets/svg/svg-icons';
 import Carousel from '../../components/bits/Carousel';
 import { signup } from '../../utils/routes';
 
 const Login = () => {
   return (
-    <div className='flex w-full h-screen overflow-hidden'>
+    <div className='flex w-full h-screen md:overflow-hidden'>
       <div className='flex-[50%] hidden md:block '>
         <Carousel showControls={false} showIndicators={true}>
           {[slider1, slider2, slider3].map((img, index) => (
@@ -23,7 +23,8 @@ const Login = () => {
           ))}
         </Carousel>
       </div>
-      <div className='w-full flex-[50%] gap-[3rem] self-center flex flex-col leading-1 font-medium items-center px-[2rem] text-center text-lighter  '>
+      <div className='w-full flex-[50%] overflow-y-scroll gap-[3rem] self-center flex flex-col leading-1 font-medium items-center px-[2rem] text-center text-lighter  '>
+        <LogoIcon className='md:hidden mt-[4rem]' />
         <hgroup className='flex flex-col gap-[0.62rem] w-full  md:w-[28rem] '>
           <h2 className='text-xl leading-1 font-medium'>
             Log in to your account

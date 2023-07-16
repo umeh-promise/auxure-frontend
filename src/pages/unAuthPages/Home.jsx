@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
+import { useRouteLoaderData, useNavigation } from 'react-router-dom';
 
-import { ArrowRightIcon } from '../../assets/svg/svg-icons';
+import { ArrowRightIcon, RollingLoader } from '../../assets/svg/svg-icons';
 import Discover from '../../components/Discover';
 import Footer from '../../components/Footer';
 import Hero from '../../components/Hero';
@@ -8,6 +9,9 @@ import Product from '../../components/Products';
 
 const Home = () => {
   const [showButton, setShowButton] = useState(false);
+  const navigation = useNavigation();
+  const isLoading = navigation.state === 'loading';
+  console.log(isLoading);
 
   useEffect(() => {
     const handleBtnVisibility = () => {
@@ -20,8 +24,11 @@ const Home = () => {
       window.removeEventListener('scroll', handleBtnVisibility);
     };
   });
+
   return (
     <main id='home'>
+      {isLoading && <RollingLoader />}
+
       <Hero />
       <Product />
       <Discover />

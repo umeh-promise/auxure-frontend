@@ -1,8 +1,10 @@
 // import product1 from '../assets/img/perf1.png';
-import product3 from '../assets/svg/perf3.svg';
-import product4 from '../assets/svg/perf4.svg';
-import product1 from '../assets/svg/perf_1.svg';
-import product2 from '../assets/svg/perf_2.svg';
+import product3 from '../assets/icons/perf3.svg';
+import product4 from '../assets/icons/perf4.svg';
+import product1 from '../assets/icons/perf_1.svg';
+import product2 from '../assets/icons/perf_2.svg';
+
+import Wrapper from './bits/Wrapper';
 
 const Products = () => {
   const product_data = [
@@ -37,7 +39,7 @@ const Products = () => {
   ];
 
   return (
-    <section className=' w-[90vw] md:w-[80vw] lg:w-[78vw] mx-auto pt-[3.75rem] pb-[4.75rem] lg:pb-[8.75rem]'>
+    <Wrapper className='pt-[3.75rem] pb-[4.75rem] lg:pb-[8.75rem]'>
       <h3 className='text-color text-xl font-medium leading-1 pb-[3.5rem]'>
         Latest collection
       </h3>
@@ -68,7 +70,7 @@ const Products = () => {
           </hgroup>
         ))}
       </div>
-    </section>
+    </Wrapper>
   );
 };
 

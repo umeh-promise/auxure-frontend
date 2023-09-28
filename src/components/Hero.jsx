@@ -1,15 +1,17 @@
-import { ArrowCircleWhiteIcon } from '../assets/svg/svg-icons';
+import { ArrowCircleWhiteIcon } from '../assets/icons/svg-icons';
 
 import Navbar from './Navbar';
+import Wrapper from './bits/Wrapper';
 
 const Hero = () => {
   return (
-    <section
-      className="w-full md:h-[40rem] lg:h-[65rem] h-[24.75rem] bg-[url('./assets/img/auxure-bg.png')] bg-cover bg-center md:bg-cover bg-no-repeat"
+    <Wrapper
+      fluid
+      className="md:h-[40rem] lg:h-[65rem] h-[24.75rem] bg-[url('./assets/img/auxure-bg.png')] bg-cover bg-center md:bg-cover bg-no-repeat"
       role='banner'
     >
-      <hgroup className='w-[90vw] md:w-[80vw] lg:w-[78vw] mx-auto flex flex-col gap-[2.5rem] md:gap-[5rem] items-start'>
-        <Navbar />
+      <Wrapper className='flex flex-col gap-[2.5rem] md:gap-[5rem] items-start'>
+        <Navbar color='fill-white' />
         <header className='text-white uppercase'>
           <hgroup className='w-[18rem] md:w-[25rem] lg:w-[32rem] inline-block mb-[2.32rem] md:mb-[2rem] font-secondary'>
             {'Discover The Essence Of Timeless'
@@ -43,8 +45,8 @@ const Hero = () => {
             <ArrowCircleWhiteIcon />
           </button>
         </header>
-      </hgroup>
-    </section>
+      </Wrapper>
+    </Wrapper>
   );
 };
 

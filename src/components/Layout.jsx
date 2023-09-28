@@ -1,20 +1,18 @@
 import { useEffect, useState } from 'react';
-// import { useNavigation } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
 
-import { ArrowRightIcon } from '../../assets/icons/svg-icons';
-import Discover from '../../components/Discover';
-import Footer from '../../components/Footer';
-import Hero from '../../components/Hero';
-import Product from '../../components/Products';
+import { ArrowRightIcon } from '../assets/icons/svg-icons';
 
-const Home = () => {
+import Footer from './Footer';
+import Navbar from './Navbar';
+import Wrapper from './bits/Wrapper';
+
+const Layout = () => {
   const [showButton, setShowButton] = useState(false);
-  // const navigation = useNavigation();
-  // const isLoading = navigation.state === 'loading';
 
   useEffect(() => {
     const handleBtnVisibility = () => {
-      window.scrollY > 250 ? setShowButton(true) : setShowButton(false);
+      window.scrollY > 150 ? setShowButton(true) : setShowButton(false);
     };
 
     window.addEventListener('scroll', handleBtnVisibility);
@@ -25,10 +23,13 @@ const Home = () => {
   });
 
   return (
-    <main id='home'>
-      <Hero />
-      <Product />
-      <Discover />
+    <Wrapper fluid>
+      <Wrapper>
+        <Navbar color='fill-color' />
+      </Wrapper>
+
+      <Outlet />
+
       <Footer />
 
       {showButton && (
@@ -39,8 +40,8 @@ const Home = () => {
           <ArrowRightIcon className='rotate-[270deg]' />
         </aside>
       )}
-    </main>
+    </Wrapper>
   );
 };
 
-export default Home;
+export default Layout;

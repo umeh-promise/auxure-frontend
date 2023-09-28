@@ -1,6 +1,8 @@
+import { ArrowCircleIcon } from '../assets/icons/svg-icons';
 import dImg_1 from '../assets/img/img1.png';
 import dImg_2 from '../assets/img/img2.png';
-import { ArrowCircleIcon } from '../assets/svg/svg-icons';
+
+import Wrapper from './bits/Wrapper';
 
 const Discover = () => {
   const discover_data = [
@@ -21,7 +23,7 @@ const Discover = () => {
   ];
 
   return (
-    <section id='about'>
+    <Wrapper fluid id='about'>
       <div className='flex h-full gap-[2rem] md:gap-0 flex-col mb-4 md:mb-0'>
         {discover_data?.map(({ id, img, title, details }) => (
           <article
@@ -36,7 +38,7 @@ const Discover = () => {
                 loading='lazy'
               />
             </div>
-            <div className='w-full bg-[url("./assets/svg/auxure-diagonal.svg")] bg-cover bg-no-repeat flex md:justify-center items-center'>
+            <div className='w-full bg-[url("./assets/icons/auxure-diagonal.svg")] bg-cover bg-no-repeat flex md:justify-center items-center'>
               <hgroup className='w-[21rem] lg:w-[27rem]'>
                 <h4 className='text-md lg:text-lg text-color font-medium leading-0.5 mb-[0.75rem]'>
                   {title}
@@ -58,7 +60,7 @@ const Discover = () => {
           </article>
         ))}
       </div>
-    </section>
+    </Wrapper>
   );
 };
 

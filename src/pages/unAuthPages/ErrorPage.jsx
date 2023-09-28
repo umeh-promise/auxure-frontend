@@ -1,4 +1,4 @@
-import { Link, useRouteError, useNavigate } from 'react-router-dom';
+import { useNavigate, useRouteError } from 'react-router-dom';
 
 const ErrorPage = () => {
   const error = useRouteError();

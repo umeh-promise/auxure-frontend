@@ -1,15 +1,16 @@
 import { Link } from 'react-router-dom';
 
+import { GoogleIcon, LogoIcon } from '../../assets/icons/svg-icons';
 import slider1 from '../../assets/img/slider1.png';
 import slider2 from '../../assets/img/slider2.png';
 import slider3 from '../../assets/img/slider3.png';
-import { GoogleIcon, LogoIcon } from '../../assets/svg/svg-icons';
 import Carousel from '../../components/bits/Carousel';
+import Wrapper from '../../components/bits/Wrapper';
 import { login } from '../../utils/routes';
 
 const Signup = () => {
   return (
-    <div className='flex w-full h-screen md:overflow-hidden'>
+    <Wrapper fluid className='flex h-screen '>
       <div className='flex-[50%] hidden  md:block '>
         <Carousel showControls={false} showIndicators={true}>
           {[slider1, slider2, slider3].map((img, index) => (
@@ -23,8 +24,8 @@ const Signup = () => {
           ))}
         </Carousel>
       </div>
-      <div className='w-full flex-[50%] overflow-y-scroll min-h-fit gap-[2rem] md:gap-[3rem] self-center flex flex-col leading-1 font-medium items-center px-[2rem] text-center text-lighter  '>
-        <LogoIcon className='md:hidden mt-[4rem]' />
+      <div className='w-full flex-[50%] min-h-fit gap-[2rem] md:gap-[3rem] self-center flex flex-col leading-1 font-medium items-center px-[2rem] text-center text-lighter '>
+        <LogoIcon className='md:hidden mt-[10rem]' />
         <hgroup className='flex flex-col gap-[0.62rem] w-full md:w-[28rem] '>
           <h2 className='text-xl leading-1 font-medium'>Create an account</h2>
           <p className='text-base font-light leading-3'>
@@ -88,7 +89,7 @@ const Signup = () => {
           </span>
         </form>
       </div>
-    </div>
+    </Wrapper>
   );
 };
 

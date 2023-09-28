@@ -10,14 +10,22 @@ export default {
       'accent-2': '#f8f3ed',
       'accent-3': '#f7f5f3',
       'accent-4': '#fc5d37',
+      'accent-5': '#2fbd6a',
       'background-color': '#fcfaf8',
       color: '#312921',
+      'color-1': '#2c2c2c',
       lighter: '#4e4033',
+      'lighter-1': '#4e4033cc',
       transparent: 'transparent',
       black: '#000000',
+      gray: '#b8b8b8',
+      'gray-1': '#b8b8b833',
+      'gray-2': '#f9f9f9',
+      'gray-3': '#ececec',
+      'gray-4': '#eaedf0;',
     },
     fontFamily: {
-      pimary: ['Poppins', 'sans-serif'],
+      primary: ['Poppins', 'sans-serif'],
       secondary: ['Cinzel', 'serif'],
     },
     lineHeight: {
@@ -29,6 +37,7 @@ export default {
     },
     fontSize: {
       sm: '0.8125rem',
+      xbase: '0.875rem',
       base: '1rem',
       md: '1.125rem',
       lg: '1.5rem',
@@ -47,8 +56,8 @@ export default {
     extend: {
       backgroundImage: {
         // 'hero-image': 'url(./src/assets/img/auxure-bg.png)',
-        // 'icon-diamond': 'url(./src/assets/svg/ion_diamond.svg)',
-        // 'auxure-diagonal': 'url(./src/assets/svg/auxure-diagonal.svg)',
+        // 'icon-diamond': 'url(./src/assets/icons/ion_diamond.svg)',
+        // 'auxure-diagonal': 'url(./src/assets/icons/auxure-diagonal.svg)',
         // 'timeless-image': 'url(./src/assets/img/img1.png)',
         // 'glamour-image': 'url(./src/assets/img/img2.png)',
       },

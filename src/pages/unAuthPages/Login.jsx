@@ -1,15 +1,17 @@
 import { Link } from 'react-router-dom';
 
+import { GoogleIcon, LogoIcon } from '../../assets/icons/svg-icons';
 import slider1 from '../../assets/img/slider1.png';
 import slider2 from '../../assets/img/slider2.png';
 import slider3 from '../../assets/img/slider3.png';
-import { CheckIcon, GoogleIcon, LogoIcon } from '../../assets/svg/svg-icons';
 import Carousel from '../../components/bits/Carousel';
+import Input from '../../components/bits/Input';
+import Wrapper from '../../components/bits/Wrapper';
 import { signup } from '../../utils/routes';
 
 const Login = () => {
   return (
-    <div className='flex w-full h-screen md:overflow-hidden'>
+    <Wrapper fluid className='flex h-screen '>
       <div className='flex-[50%] hidden md:block '>
         <Carousel showControls={false} showIndicators={true}>
           {[slider1, slider2, slider3].map((img, index) => (
@@ -23,8 +25,8 @@ const Login = () => {
           ))}
         </Carousel>
       </div>
-      <div className='w-full flex-[50%] overflow-y-scroll min-h-fit gap-[3rem] self-center flex flex-col leading-1 font-medium items-center px-[2rem] text-center text-lighter  '>
-        <LogoIcon className='md:hidden mt-[4rem]' />
+      <div className='w-full flex-[50%] min-h-fit gap-[3rem] self-center flex flex-col leading-1 font-medium items-center px-[2rem] text-center text-lighter '>
+        <LogoIcon className='md:hidden mt-[8rem]' />
         <hgroup className='flex flex-col gap-[0.62rem] w-full  md:w-[28rem] '>
           <h2 className='text-xl leading-1 font-medium'>
             Log in to your account
@@ -48,20 +50,12 @@ const Login = () => {
           />
 
           <div className='w-full flex justify-between items-center'>
-            <hgroup className='flex relative gap-[0.65rem] items-center justify-center'>
-              <input
-                type='checkbox'
-                id='remember-me'
-                className='w-[1.5rem] h-[1.5rem] bg-primary appearance-none rounded-[0.313rem] shrink-0 checked:bg-primary checked:border-0 focus:outline-none peer cursor-pointer'
-              />
-              <label
-                htmlFor='remember-me'
-                className='text-lighter text-base font-light leading-3 cursor-pointer'
-              >
-                Remember Me
-              </label>
-              <CheckIcon className='hidden w-[1.5rem] h-[1.5rem] peer-checked:block absolute pointer-events-none left-0' />
-            </hgroup>
+            <Input
+              type='checkbox'
+              variant='primary'
+              label='Remember Me'
+              className='max-w-fit'
+            />
 
             <Link
               to='/forgot-password'
@@ -95,7 +89,7 @@ const Login = () => {
           </span>
         </form>
       </div>
-    </div>
+    </Wrapper>
   );
 };
 

@@ -7,15 +7,17 @@ import {
   LinkedIcon,
   LogoIcon,
   TwitterIcon,
-} from '../assets/svg/svg-icons';
+} from '../assets/icons/svg-icons';
+
+import Wrapper from './bits/Wrapper';
 
 const Footer = () => {
   return (
     <footer
-      className='w-full bg-accent-2 px-[1.56rem] py-[1.94rem] md:py-[3.15rem] lg:py-[6.375rem] pb-[1.42rem] flex flex-col items-center justify-center md:gap-[1.5rem] gap-[0.5]'
+      className='w-full bg-accent-2 px-[1.56rem] py-[1.94rem] md:py-[3.15rem] lg:pt-[6.38rem] pb-[1.41rem] flex flex-col items-center justify-center md:gap-[4rem] lg:gap-[4.5rem] gap-[2.5rem]'
       id='contact'
     >
-      <hgroup className='w-[90vw] md:w-[80vw] lg:w-[78vw] mx-auto flex justify-between text-primary lg:flex-row flex-col gap-[1.5rem] md:gap-[2.4rem]'>
+      <Wrapper className='flex justify-between text-primary lg:flex-row flex-col gap-[1.5rem] md:gap-[2.4rem]'>
         <LogoIcon className='mb-[1rem] lg:mb-auto' />
         <div>
           <h4 className='mb-[0.94rem] md:mb-[1.4rem] lg:mb-[2rem] leading-[1.75rem] font-semibold text-md md:text-lg'>
@@ -51,11 +53,11 @@ const Footer = () => {
             </label>
           </hgroup>
         </div>
-      </hgroup>
+      </Wrapper>
 
-      <AuxureLogoIcon className='w-full' />
-      <hgroup className='w-[90vw] md:w-[80vw] lg:w-[78vw] mx-auto flex flex-col justify-between text-primary md:gap-[2.19rem] gap-[1rem]'>
-        <span className='w-full  opacity-[0.5rem] bg-[text-accent-4] border-[1px] border-[text-accent-4] border-style'></span>
+      <AuxureLogoIcon className='w-full h-fit object-cover' />
+      <Wrapper className='flex flex-col justify-between text-primary md:gap-[2.19rem] gap-[1rem]'>
+        <span className='w-full opacity-[0.5rem] bg-[text-accent-4] border-[1px] border-[text-accent-4] border-style'></span>
         <div className='flex xl:gap-[43.12rem] md:justify-between gap-[.87rem] md:flex-row flex-col items-center md:items-start '>
           <span className='flex gap-[0.625rem]'>
             <LinkedIcon />
@@ -66,7 +68,7 @@ const Footer = () => {
             © 2023 Auxure. All rights reserved.
           </p>
         </div>
-      </hgroup>
+      </Wrapper>
     </footer>
   );
 };

@@ -27,11 +27,8 @@ const Login = () => {
           ))}
         </Carousel>
       </div>
-      <div className='w-full flex-[50%] min-h-fit gap-[3rem] self-center flex flex-col leading-1 font-medium items-center px-[2rem] text-center text-lighter '>
-        <LogoIcon
-          className='mt-[8rem] md:mt-[2rem] cursor-pointer'
-          onClick={() => navigate(home)}
-        />
+      <div className='w-full flex-[50%] min-h-fit gap-[3rem] self-center flex flex-col leading-1 font-medium items-center px-[2rem] text-center text-lighter mt-[4rem] md:mt-0 '>
+        <LogoIcon className=' cursor-pointer' onClick={() => navigate(home)} />
         <hgroup className='flex flex-col gap-[0.62rem] w-full  md:w-[28rem] '>
           <h2 className='text-xl leading-1 font-medium'>
             Log in to your account

@@ -15,7 +15,7 @@ const OrderSummary = () => {
         <hgroup className='flex w-full justify-between items-center text-lighter border-b-[1px] border-gray-1 py-[0.75rem] gap-[1rem] md:gap-[1rem] '>
           <span className='flex items-center justify-center relative w-[4rem] h-[4rem] bg-background-color border-solid outline-none border-[#324b6d1a] border-[0.52px] '>
             <img src={img1} alt='' className='block h-full object-fit' />
-            <OrderQuantity className='w-[1rem] md:w-[1.5rem] h-[1rem] md:h-[1.5rem] text-sm md:text-[0.875rem] top-[-0.5rem] md:left-[2.9rem] lg:left-[2.3rem] xl:left-[3.06rem]' />
+            <OrderQuantity className='w-[1rem] md:w-[1.5rem] h-[1rem] md:h-[1.5rem] text-sm md:text-[0.875rem] top-[-0.5rem] right-0 md:left-[2.9rem] lg:left-[2.3rem] xl:left-[3.06rem]' />
           </span>
 
           <span className='flex flex-auto lg:flex-initial flex-col md:gap-[0.62rem]'>

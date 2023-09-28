@@ -26,11 +26,8 @@ const Signup = () => {
           ))}
         </Carousel>
       </div>
-      <div className='w-full flex-[50%] min-h-fit gap-[2rem] md:gap-[1.5rem] self-center flex flex-col leading-1 font-medium items-center px-[2rem] text-center text-lighter '>
-        <LogoIcon
-          className='mt-[10rem] sm:mt-[4rem] md:mt-0 cursor-pointer'
-          onClick={() => navigate(home)}
-        />
+      <div className='w-full flex-[50%] min-h-fit gap-[2rem] md:gap-[1.5rem] self-center flex flex-col leading-1 font-medium items-center px-[2rem] text-center text-lighter mt-[4rem] md:mt-0 '>
+        <LogoIcon className='cursor-pointer' onClick={() => navigate(home)} />
         <hgroup className='flex flex-col gap-[0.62rem] w-full md:w-[28rem] '>
           <h2 className='text-xl leading-1 font-medium'>Create an account</h2>
           <p className='text-base font-light leading-3'>

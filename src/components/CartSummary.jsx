@@ -1,4 +1,4 @@
-import { Navigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 import { checkout } from '../utils/routes';
 
@@ -6,6 +6,8 @@ import Button from './bits/Button';
 import Wrapper from './bits/Wrapper';
 
 function CartSummary() {
+  const navigate = useNavigate();
+
   return (
     <Wrapper
       fluid
@@ -35,7 +37,7 @@ function CartSummary() {
         </hgroup>
         <Button
           className='border-none bg-accent-1 py-[1rem] px-[2.87rem] uppercase text-md leading-1 text-lighter font-medium '
-          onClick={() => Navigate(checkout)}
+          onClick={() => navigate(checkout)}
         >
           Proceed to checkout
         </Button>

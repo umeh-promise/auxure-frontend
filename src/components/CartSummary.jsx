@@ -36,7 +36,7 @@ function CartSummary() {
           <b className='text-lg md:text-xl font-medium leading-1'>N254,875</b>
         </hgroup>
         <Button
-          className='border-none bg-accent-1 py-[1rem] px-[2.87rem] uppercase text-md leading-1 text-lighter font-medium '
+          className='w-full md:w-fit uppercase bg-accent-1 border-primary outline-none py-[1rem] px-[4rem] text-color-1 text-base font-semibold leading-1'
           onClick={() => navigate(checkout)}
         >
           Proceed to checkout

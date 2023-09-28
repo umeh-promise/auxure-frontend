@@ -3,7 +3,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 // import SuspenseWrapper from './components/bits/SuspenseWrapper';
 import Layout from './components/Layout';
 import Product from './pages/unAuthPages/Product';
-import Checkout from './pages/unAuthPages/Checkout';
+import Checkout from './pages/authPages/Checkout';
 import ErrorPage from './pages/unAuthPages/ErrorPage';
 import Home from './pages/unAuthPages/Home';
 import Login from './pages/unAuthPages/Login';

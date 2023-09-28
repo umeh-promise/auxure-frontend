@@ -113,7 +113,7 @@ function Product() {
 
               <div className='flex gap-2 w-full flex-col md:flex-row'>
                 <Button
-                  className='px-[1.25rem] py-[0.625rem] flex items-center gap-[1rem] shrink-0 bg-accent-1 border-none rounded-none '
+                  className='w-full md:w-fit uppercase bg-accent-1 border-primary outline-none py-[0.75rem] px-[1.25rem] text-color-1 text-base font-semibold leading-1'
                   onClick={() => navigate(cart)}
                 >
                   <CartIcon />
@@ -121,7 +121,7 @@ function Product() {
                     Add to cart
                   </span>
                 </Button>
-                <Button className='px-[1.25rem] py-[0.625rem] flex items-center gap-[1rem] shrink-0 border-[1px] border-accent-1 rounded-none '>
+                <Button className='w-full md:w-fit uppercase  border-accent-1 outline-none py-[0.65rem] px-[1.25rem] text-color-1 text-base font-semibold leading-1'>
                   <FavouriteIcon />
                   <span className='font-base font-semibold leading-1 uppercase text-color'>
                     wishlist

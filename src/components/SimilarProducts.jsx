@@ -143,7 +143,7 @@ const products = [
 function SimilarProducts() {
   return (
     <Wrapper fluid className='my-[2rem]'>
-      <h4 className='my-[2rem] text-color text-lg font-semibold leading-1.5 uppercase '>
+      <h4 className='my-[2rem] text-color text-md md:text-lg font-semibold leading-1.5 uppercase '>
         SIMILAR PRODUCTS YOU MIGHT LIKE
       </h4>
       <ul className='grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-x-[3rem] gap-y-[3rem] '>

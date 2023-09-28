@@ -3,7 +3,6 @@ import { useState } from 'react';
 import { ChevronDownIcon, StarFilledIcon } from '../assets/icons/svg-icons';
 
 import ReviewCard from './ReviewCard';
-import SimilarProducts from './SimilarProducts';
 import Button from './bits/Button';
 
 function Reviews() {
@@ -66,8 +65,6 @@ function Reviews() {
           <ChevronDownIcon className={showMore ? 'rotate-180' : ''} />
         </Button>
       </div>
-
-      <SimilarProducts />
     </div>
   );
 }

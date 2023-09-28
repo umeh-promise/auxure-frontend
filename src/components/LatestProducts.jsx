@@ -1,12 +1,15 @@
 // import product1 from '../assets/img/perf1.png';
+import { useNavigate } from 'react-router-dom';
+
 import product3 from '../assets/icons/perf3.svg';
 import product4 from '../assets/icons/perf4.svg';
 import product1 from '../assets/icons/perf_1.svg';
 import product2 from '../assets/icons/perf_2.svg';
+import { shop } from '../utils/routes';
 
 import Wrapper from './bits/Wrapper';
 
-const Products = () => {
+const LatestProducts = () => {
   const product_data = [
     {
       id: 1,
@@ -38,6 +41,8 @@ const Products = () => {
     },
   ];
 
+  const navigate = useNavigate();
+
   return (
     <Wrapper className='pt-[3.75rem] pb-[4.75rem] lg:pb-[8.75rem]'>
       <h3 className='text-color text-xl font-medium leading-1 pb-[3.5rem]'>
@@ -64,6 +69,7 @@ const Products = () => {
             <button
               role='button'
               className='text-color rounded-sm text-base font-medium leading-2 uppercase bg-accent-1 py-[0.45rem] px-[1.25rem] md:py-[0.62rem] hover:bg-primary hover:text-white transition-all duration-700'
+              onClick={() => navigate(shop)}
             >
               Shop now
             </button>
@@ -74,4 +80,4 @@ const Products = () => {
   );
 };
 
-export default Products;
+export default LatestProducts;

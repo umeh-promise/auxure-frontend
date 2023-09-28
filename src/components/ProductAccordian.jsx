@@ -9,7 +9,7 @@ function ProductAccordian({ children, title }) {
   return (
     <Wrapper>
       <hgroup className='flex justify-between items-center border-b-[1px] pt-[1.56rem] pb-[1rem] border-gray-4'>
-        <h4 className='text-lighter text-md font-semibold leading-1.5 uppercase '>
+        <h4 className='text-lighter text-base md:text-md font-semibold leading-1.5 uppercase '>
           {title}
         </h4>
 
@@ -19,7 +19,7 @@ function ProductAccordian({ children, title }) {
         />
       </hgroup>
       {show && (
-        <div className='text-lighter text-base font-light leading-2 pt-[1rem] '>
+        <div className='text-lighter text-xbase md:text-base font-light leading-2 pt-[1rem] '>
           {children}
         </div>
       )}

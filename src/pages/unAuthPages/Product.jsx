@@ -10,6 +10,7 @@ import img2 from '../../assets/img/perf21.png';
 import img1 from '../../assets/img/perf22.png';
 import ProductAccordian from '../../components/ProductAccordian';
 import Reviews from '../../components/Reviews';
+import SimilarProducts from '../../components/SimilarProducts';
 import Banner from '../../components/bits/Banner';
 import Button from '../../components/bits/Button';
 import Input from '../../components/bits/Input';
@@ -98,11 +99,11 @@ function Product() {
                 </div>
               </hgroup>
               <hgroup className='my-[.46rem]'>
-                <h4 className='text-color text-lg font-semibold leading-1.5 mb-[0.62rem] '>
+                <h4 className='text-color text-md md:text-lg font-semibold leading-1.5 mb-[0.62rem] '>
                   Enchanted Elixir Unisex Perfume
                 </h4>
 
-                <p className='text-base font-light leading-3 text-lighter'>
+                <p className='text-xbase md:text-base font-light leading-2 md:leading-3 text-lighter'>
                   An exquisite blend of precious ingredients that leaves you
                   feeling like a million bucks. The top notes of this perfume
                   are a delicate blend of bergamot and grapefruit, which give it
@@ -181,6 +182,7 @@ function Product() {
           </ProductAccordian>
 
           <Reviews />
+          <SimilarProducts />
         </main>
       </section>
     </Wrapper>

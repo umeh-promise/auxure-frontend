@@ -5,7 +5,7 @@ import { ArrowRightIcon } from '../../assets/icons/svg-icons';
 import Discover from '../../components/Discover';
 import Footer from '../../components/Footer';
 import Hero from '../../components/Hero';
-import Product from '../../components/Products';
+import LatestProducts from '../../components/LatestProducts';
 
 const Home = () => {
   const [showButton, setShowButton] = useState(false);
@@ -27,7 +27,7 @@ const Home = () => {
   return (
     <main id='home'>
       <Hero />
-      <Product />
+      <LatestProducts />
       <Discover />
       <Footer />
 

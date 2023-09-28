@@ -18,15 +18,15 @@ function ListCard({ id, name, price, images, star, description }) {
 
       {/* Contents */}
       <div className='w-full flex flex-col gap-[0.4rem] md:gap-y-[0.62rem] p-[0.5rem] pr-[1rem] xl:p-[2rem] '>
-        <h4 className='text-color text-md font-semibold leading-1'>{name}</h4>
-        <p className='line-clamp-2 xl:line-clamp-none  text-base font-light leading-1.5 md:leading-2 xl:leading-3 text-color xl:pb-[0.13rem] pb-0 '>
+        <h4 className='text-color text-base font-semibold leading-1'>{name}</h4>
+        <p className='line-clamp-2 xl:line-clamp-none  text-xbase font-lighter leading-1.5 md:leading-2 xl:leading-3 text-color xl:pb-[0.13rem] pb-0 '>
           {description}
         </p>
 
         <hgroup className='w-full flex justify-between items-center pb-0 xl:pb-[0.63rem] '>
-          <h3 className='text-color text-md xl:text-lg font-medium leading-1.5 '>
+          <h4 className='text-color text-base md:text-md xl:text-lg font-medium leading-1.5 '>
             N{formatAmount(price)}
-          </h3>
+          </h4>
           <p className='flex text-color text-xbase font-light leading-3 items-center gap-[0.12rem] '>
             <StarIcon />
             <span>{star}</span>

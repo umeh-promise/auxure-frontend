@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 import { GoogleIcon, LogoIcon } from '../../assets/icons/svg-icons';
 import slider1 from '../../assets/img/slider1.png';
@@ -6,12 +6,14 @@ import slider2 from '../../assets/img/slider2.png';
 import slider3 from '../../assets/img/slider3.png';
 import Carousel from '../../components/bits/Carousel';
 import Wrapper from '../../components/bits/Wrapper';
-import { login } from '../../utils/routes';
+import { home, login } from '../../utils/routes';
 
 const Signup = () => {
+  const navigate = useNavigate();
+
   return (
     <Wrapper fluid className='flex h-screen '>
-      <div className='flex-[50%] hidden  md:block '>
+      <div className='flex-[50%] hidden md:block '>
         <Carousel showControls={false} showIndicators={true}>
           {[slider1, slider2, slider3].map((img, index) => (
             <div key={index}>
@@ -24,8 +26,11 @@ const Signup = () => {
           ))}
         </Carousel>
       </div>
-      <div className='w-full flex-[50%] min-h-fit gap-[2rem] md:gap-[3rem] self-center flex flex-col leading-1 font-medium items-center px-[2rem] text-center text-lighter '>
-        <LogoIcon className='md:hidden mt-[10rem]' />
+      <div className='w-full flex-[50%] min-h-fit gap-[2rem] md:gap-[1.5rem] self-center flex flex-col leading-1 font-medium items-center px-[2rem] text-center text-lighter '>
+        <LogoIcon
+          className='mt-[10rem] sm:mt-[4rem] md:mt-0 cursor-pointer'
+          onClick={() => navigate(home)}
+        />
         <hgroup className='flex flex-col gap-[0.62rem] w-full md:w-[28rem] '>
           <h2 className='text-xl leading-1 font-medium'>Create an account</h2>
           <p className='text-base font-light leading-3'>

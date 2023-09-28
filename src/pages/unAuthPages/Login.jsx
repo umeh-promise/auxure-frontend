@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 import { GoogleIcon, LogoIcon } from '../../assets/icons/svg-icons';
 import slider1 from '../../assets/img/slider1.png';
@@ -7,9 +7,11 @@ import slider3 from '../../assets/img/slider3.png';
 import Carousel from '../../components/bits/Carousel';
 import Input from '../../components/bits/Input';
 import Wrapper from '../../components/bits/Wrapper';
-import { signup } from '../../utils/routes';
+import { home, signup } from '../../utils/routes';
 
 const Login = () => {
+  const navigate = useNavigate();
+
   return (
     <Wrapper fluid className='flex h-screen '>
       <div className='flex-[50%] hidden md:block '>
@@ -26,7 +28,10 @@ const Login = () => {
         </Carousel>
       </div>
       <div className='w-full flex-[50%] min-h-fit gap-[3rem] self-center flex flex-col leading-1 font-medium items-center px-[2rem] text-center text-lighter '>
-        <LogoIcon className='md:hidden mt-[8rem]' />
+        <LogoIcon
+          className='mt-[8rem] md:mt-[2rem] cursor-pointer'
+          onClick={() => navigate(home)}
+        />
         <hgroup className='flex flex-col gap-[0.62rem] w-full  md:w-[28rem] '>
           <h2 className='text-xl leading-1 font-medium'>
             Log in to your account

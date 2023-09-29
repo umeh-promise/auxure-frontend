@@ -1,9 +1,14 @@
+import { useNavigate } from 'react-router-dom';
+
 import { ArrowCircleWhiteIcon } from '../assets/icons/svg-icons';
+import { shop } from '../utils/routes';
 
 import Navbar from './Navbar';
 import Wrapper from './bits/Wrapper';
 
 const Hero = () => {
+  const navigate = useNavigate();
+
   return (
     <Wrapper
       fluid
@@ -39,7 +44,10 @@ const Hero = () => {
             role='button'
             className='flex px-[.5rem] lg:px-[2.5rem] lg:py-[0.55rem] justify-center items-center gap-[0.65rem] lg:gap-[0.75rem] border-[.18rem] lg:border-[.2rem] btn-cta'
           >
-            <b className='inline-block text-white uppercase font-medium text-[1.25rem] leading-1'>
+            <b
+              className='inline-block text-white uppercase font-medium text-[1.25rem] leading-1'
+              onClick={() => navigate(shop)}
+            >
               shop now
             </b>
             <ArrowCircleWhiteIcon />

@@ -43,11 +43,9 @@ const Hero = () => {
           <button
             role='button'
             className='flex px-[.5rem] lg:px-[2.5rem] lg:py-[0.55rem] justify-center items-center gap-[0.65rem] lg:gap-[0.75rem] border-[.18rem] lg:border-[.2rem] btn-cta'
+            onClick={() => navigate(shop)}
           >
-            <b
-              className='inline-block text-white uppercase font-medium text-[1.25rem] leading-1'
-              onClick={() => navigate(shop)}
-            >
+            <b className='inline-block text-white uppercase font-medium text-[1.25rem] leading-1'>
               shop now
             </b>
             <ArrowCircleWhiteIcon />
